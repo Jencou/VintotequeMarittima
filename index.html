@@ -25,10 +25,10 @@
     <meta name="author" content="Mads Kildegaard Kristjansen. 2022">
     <meta name="copyright" content="Mads Kildegaard Kristjansen 2022. All Rights reserved.">
     <meta name="description" content="This webpage is about a new danish wine bar located at the harbor of Nykøbing Falster. The main purpose of the website is to promote and inform people about the new wine bar.">
-    <meta name="theme-color" content="#ffffff"/>
+    <meta name="theme-color" content="#111111"/>
 
     <!--Sikre at iOS bruger det rigtige billede, hvis en Home Screen genvej skabes-->
-    <link rel="apple-touch-icon" href="images/marittima_front_pic.webp">
+    <link rel="apple-touch-icon" href="image/marittima_front_pic.webp">
 
     <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
@@ -36,6 +36,9 @@
 
     <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse - bliver brugt til responsive websider -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Link til Font Awesome -->
+    <script src="https://kit.fontawesome.com/df35710484.js" crossorigin="anonymous"></script>
 </head>
 
 <!-- i <body> har man alt indhold på siden som brugeren kan se -->
@@ -44,308 +47,78 @@
 <!-- Forbundet med "Gå til toppen," som er en del af footeren-->
 <div id="top"></div>
 
-<!--HEADER-->
-<div class="container-fluid bg-light">
-
-    <div class="row navbar align-items-center">
-
-        <!--LOGO-->
-        <div class="col-6 col-lg-3">
-            <a href="index.html">
-                <img src="images/logo_navn.svg" class="header_logo ms-1 ms-lg-5 py-1" alt="Vinoteque Marittima">
-            </a>
+<!--Overskrift-->
+<div class="container-fluid">
+    <div class="row align-items-center py-3">
+        <div class="col-3 d-flex justify-content-center align-items-center">
+            <img src="image/logo.png" alt="Logo" class="logo">
         </div>
-
-        <!--BURGERMENU - MOBIL & TABLET-->
-        <div class="col-6 d-lg-none">
-            <div class="burger my-auto">
-                <img src="images/bars-solid.svg" alt="Burgermenu" class="toggle burger_icon float-end me-3">
-            </div>
+        <div class="col-6 d-flex flex-column justify-content-center align-items-center">
+            <h1 class="vintext text-center px-5 pt-5">Vinoteque Marittima</h1>
+            <h5 class="text-white text-center pb-5">Sandgade - Nykøbing Falster</h5>
         </div>
-        <div class="nav col-12 d-lg-none">
-            <div class="row text-center mx-auto">
-                <div class="col-12 p-3"><a href="index.html" class="nav_text nav_current">FORSIDE</a></div>
-                <div class="col-12 p-3"><a href="menu.html" class="nav_text">MENU</a></div>
-                <div class="col-12 p-3"><a href="begivenheder.html" class="nav_text">BEGIVENHEDER</a></div>
-                <div class="col-12 p-3"><a href="selskabslokaler.html" class="nav_text">SELSKABSLOKALER</a></div>
-                <div class="col-12 p-3"><a href="om_os.html" class="nav_text">OM OS</a></div>
-            </div>
-        </div>
-
-        <!--NAVBAR - DESKTOP-->
-        <div class="col-lg-8 d-none d-lg-block">
-            <div class="row justify-content-end text-center text-lg-start me-lg-5">
-                <div class="col-lg-auto p-3"><a href="index.html" class="nav_text nav_current">FORSIDE</a></div>
-                <div class="col-lg-auto p-3"><a href="menu.html" class="nav_text">MENU</a></div>
-                <div class="col-lg-auto p-3"><a href="begivenheder.html" class="nav_text">BEGIVENHEDER</a></div>
-                <div class="col-lg-auto p-3"><a href="selskabslokaler.html" class="nav_text">SELSKABSLOKALER</a></div>
-                <div class="col-lg-auto p-3"><a href="om_os.html" class="nav_text">OM OS</a></div>
-            </div>
-        </div>
-
-    </div>
-
-</div>
-
-<!--Videoen som bliver vist i toppen af forsiden (under nav-baren)-->
-<div class="position-relative vidbox shadow">
-    <!--    Selve videoen-->
-    <video class="video1" autoplay muted playsinline loop>
-        <source src="images/video_front_page.webm" type="video/webm">
-        <source src="images/video_front_page_mp4.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-    <!--    Div som holder container til logo-->
-    <div class="position-absolute w-100">
-        <!--        Container som holder på logo-->
-        <div class="container-fluid">
-            <!--            Row-->
-            <div class="row">
-                <!--                Col 12 (dvs den fylder hele row'en-->
-                <div class="col-12 imgbox p-0 d-flex flex-column justify-content-end align-items-center">
-                    <!--                    Billede af logo (midt på forsidens øverste video-->
-                    <img src="images/marittima_round_logo_2.webp" class="video_center_logo shadow" alt="Logo">
-                </div>
-            </div>
+        <div class="col-3 d-flex justify-content-center align-items-center">
+            <a class="vintext text-decoration-none fs-4 link" href="#bottom">Kontakt os <i class="fas fa-arrow-down"></i></a>
         </div>
     </div>
 </div>
 
-<!--Carousel med billeder af vin, bar, og udsigt-->
-<div class="container-fluid m-0 p-0 g-0 my-5">
-    <!--    Row-->
-    <div class="row g-0 p-0 m-0 container_pic_wood ">
-        <!--        Col-12-->
-        <div class="col-12 p-0 m-0 g-0 d-flex justify-content-center align-items-center ">
-            <!--            Selve Carousellen-->
-            <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="false">
-                <!--                Carousel indikatorer-->
-                <div class="carousel-indicators ">
-                    <!--                    Knap 1-->
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <!--                    Knap 2-->
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <!--                    Knap 3-->
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    <!--                    Knap 4-->
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                </div>
-                <!--                Selve billederne-->
-                <div class="carousel-inner ">
-
-                    <!--                    Billede 1-->
-                    <div class="carousel-item active">
-                        <div>
-                            <!--                            Sort Slør-->
-                            <div class="layered-image"></div>
-                            <!--                        Selve billede 1-->
-                            <img src="images/marittima_front_pic.webp" class="resize_carousel_pic" alt="Marittima" style="object-fit: cover">
-                        </div>
-                        <!--                        Tekst over billede 1 (fra md og op)-->
-                        <div class="carousel-caption d-none d-md-block">
-                            <h1 class="text-start mb-3">Velkommen ombord</h1>
-                            <p class="text-start w-50 fs-5">Skibet Marittima har en lang historie bag sig. Det har sejlet i både Tyskland og Spanien. I dag huser det vores vinbar i Nykøbing Falster.</p>
-                        </div>
-                        <!--                        Tekst over billede 1 (fra sm og ned)-->
-                        <div class="carousel-caption d-md-none p-0">
-                            <p class="text-start mb-1 fs-6">Velkommen ombord</p>
-                            <p class="text-start w-50 custom-font-size-xs">Skibet Marittima har en lang historie bag sig. Det har sejlet i både Tyskland og Spanien. I dag huser det vores vinbar i Nykøbing Falster.</p>
-                        </div>
-                    </div>
-                    <!--                    Billede 2-->
-                    <div class="carousel-item">
-                        <div>
-                            <!--                            Sort Slør-->
-                            <div class="layered-image"></div>
-                            <!--                        Selve billede 2-->
-                            <img src="images/bord_b_udsigt.webp" class="resize_carousel_pic" alt="Udsigt fra bordet" style="object-fit: cover">
-                        </div>
-                        <!--                        Tekst over billede 2 (fra md og op)-->
-                        <div class="carousel-caption d-none d-md-block">
-                            <h1 class="text-start mb-3">Smuk udsigt</h1>
-                            <p class="text-start w-50 fs-5">Kom ombord om oplev den særlige stemning på vandet. Nyd din drikkelse med udsigt til Nykøbing Falster Havn.</p>
-                        </div>
-                        <!--                        Tekst over billede 2 (fra sm og ned)-->
-                        <div class="carousel-caption d-md-none p-0">
-                            <p class="text-start mb-1 fs-6">Smuk udsigt</p>
-                            <p class="text-start w-50 custom-font-size-xs">Kom ombord om oplev den særlige stemning på vandet. Nyd din drikkelse med udsigt til Nykøbing Falster Havn.</p>
-                        </div>
-                    </div>
-                    <!--                    Billede 3-->
-                    <div class="carousel-item">
-                        <div>
-                            <!--                            Sort Slør-->
-                            <div class="layered-image"></div>
-                            <!--                        Selve billede 3-->
-                            <img src="images/baren_med_udsigt.webp" class="resize_carousel_pic" alt="Baren" style="object-fit: cover">
-                            <!--                        Tekst til billede 3 (fra md og op)-->
-                        </div>
-                        <div class="carousel-caption d-none d-md-block">
-                            <h1 class="text-start mb-3">Baren</h1>
-                            <p class="text-start w-50 fs-5">Baren byder på alt godt til ganen.
-                                Her kan du få intet mindre end 75 forskellige vine og ca. 40 forskellige øl. Vi tilbyder også drikke som Gammel Have og Gin Hass.</p>
-                        </div>
-                        <!--                        Tekst til billede 3 (fra sm og ned)-->
-                        <div class="carousel-caption d-md-none p-0">
-                            <p class="text-start mb-1 fs-6">Baren</p>
-                            <p class="text-start w-50 custom-font-size-xs">Baren byder på alt godt til ganen.
-                                Her kan du få intet mindre end 75 forskellige vine og ca. 40 forskellige øl. Vi tilbyder også drikke som Gammel Have og Gin Hass.</p>
-                        </div>
-                    </div>
-                    <!--                    Billede 4-->
-                    <div class="carousel-item">
-                        <a href="https://www.facebook.com/marius.mortensen.eftf" target="_blank">
-                            <div>
-                                <!--                            Sort Slør-->
-                                <div class="layered-image"></div>
-                                <!--                        Selve billede 4-->
-                                <img src="images/facebook_rep_2.webp" class="resize_carousel_pic" alt="Facebook" style="object-fit: cover">
-                                <!--                        Tekst til billede 4 (fra md og op)-->
-                            </div>
-                            <div class="carousel-caption d-none d-md-block">
-                                <h1 class="text-start mb-3">Mød andre vin-entusiaster</h1>
-                                <p class="text-start w-50 fs-5">Følg med på vores Facebookside "Vinoteque Marittima".
-                                    Her er mulighed for at tale med andre om vin, blive opdateret på kommende begivenheder og på udskiftning af vin.</p>
-                            </div>
-                            <!--                        Tekst til billede 4 (fra sm og ned)-->
-                            <div class="carousel-caption d-md-none p-0">
-                                <p class="text-start mb-1 fs-6">Vores Facebook fællesskab</p>
-                                <p class="text-start w-50 custom-font-size-xs">Følg med på vores Facebookside "Vinoteque Marittima".
-                                    Her er mulighed for at tale med andre om vin, blive opdateret på kommende begivenheder og på udskiftning af vin.</p>
-                            </div>
-                        </a>
-                    </div>
-                    <!--                   Billede 5-->
-                    <div class="carousel-item">
-                        <div>
-                            <!--                            Sort Slør-->
-                            <div class="layered-image"></div>
-                            <!--                            Selve billed 5-->
-                            <img src="images/ugens_vin_test.webp" class="resize_carousel_pic" alt="Ugens Vin" style="object-fit: cover">
-                        </div>
-                        <!--                        Tekst over billede 5 (fra md og op)-->
-                        <div class="carousel-caption d-none d-md-block">
-                            <h1 class="text-start mb-3">Anbefaling: Cháteau Les Martineaux</h1>
-                            <p class="text-start w-50 fs-5">Vi anbefaler Cháteau Les Martineaux. Rødvinen kommer fra Louis Eschenauer, en vingård i regionen Bordeaux i Frankring. De druer, som er anvendt er Cabernet Sauvignon, Cabernet Franc og Merlot.</p>
-                        </div>
-                        <!--                        Tekst over billede 5 (fra sm og ned)-->
-                        <div class="carousel-caption d-md-none p-0">
-                            <p class="text-start mb-1 fs-6">Anbefaling: Cháteau Les Martineaux</p>
-                            <p class="text-start w-50 custom-font-size-xs">Vi anbefaler Cháteau Les Martineaux. Rødvinen kommer fra Louis Eschenauer, en vingård i regionen Bordeaux i Frankring. De druer, som er anvendt er Cabernet Sauvignon, Cabernet Franc og Merlot.</p>
-                        </div>
-                    </div>
-
-                </div>
-                <!--                Knap til at bladre tilbage i billederne-->
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <!--                Knap til at bladre frem i billederne-->
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
+<!--Første tekst-->
+<div class="container-fluid py-1">
+    <div class="row vinborder m-1">
+        <div class="col-6">
+            <img src="image/marittima_front_pic.webp" alt="Marittima" class="rounded-circle py-3">
+        </div>
+        <div class="col-6 d-flex flex-column justify-content-center px-5">
+            <h2 class="vintext py-1">Marittima</h2>
+            <p class="text-white py-1">Marittima blev søsat i 1958 i Tyskland, hvor det blev brugt som færge mellem forskellige tyske destinationer.</p>
+            <p class="text-white py-1">Senere har skibet sejlet i både Danmark og Spanien, for at vende tilbage til Tyskland. Nu ligger det til i Nykøbing Falster havn og byder hver uge mange kunder velkommen.</p>
+            <p class="text-white py-1">Kom ombord og mærk den særlige stemning, mens du får dig et dejligt glas vin.</p>
         </div>
     </div>
 </div>
 
-<!--General information om Vinbaren-->
-<div class="container-fluid my-5 pt-2 pb-5 p-0 g-0 container_pic_wood_repeated">
-    <!--    Overskrift-->
-    <h1 class="text-white text-center side_titel display-4 my-5">Vinbaren</h1>
-    <!--    Row-->
-    <div class="row m-3 my-5 p-0 g-0 d-flex justify-content-center">
-        <!--        Col 11 med mørk baggrund #1-->
-        <div class="col-11 gray-color d-flex flex-column flex-md-row px-3 px-md-5 align-self-center rounded-custom">
-            <!--            Col med tekst-->
-            <div class="col-md-8 d-flex flex-column justify-content-center">
-                <!--                Overskrift-->
-                <h2 class="text-white mb-md-1 mb-lg-2 mt-5">Skibets centrum</h2>
-                <!--                Paragraf-->
-                <p class="text-white mt-3 mb-md-5 fs-4">Marittimas vinbar er centrum for hele skibet.
-                    Vinbaren udgør ca. 1/3 af skibet. Marittima byder også på hyggelige festlokaler på det øvre dæk, samt rolige lokaler i kælderen.
-                </p>
-            </div>
-            <!--            Col med billede-->
-            <div class="col-md-4 m-md-4 my-4 d-flex align-items-center">
-                <!--                Selve billedet-->
-                <img src="images/barfront.webp" alt="Fronten af baren" class="rounded-custom">
-            </div>
+<!--Anden tekst-->
+<div class="container-fluid py-1">
+    <div class="row vinborder m-1 flex-row-reverse">
+        <div class="col-6">
+            <img src="image/Jes1.webp" alt="Marittima" class="rounded-circle py-3">
         </div>
-    </div>
-    <!--    Row-->
-    <div class="row m-3 my-5 p-0 g-0 d-flex justify-content-center">
-        <!--        Col 11 med mørk baggrund #2-->
-        <div class="col-11 gray-color d-flex flex-column-reverse flex-md-row px-3 px-md-5 align-self-center rounded-custom">
-            <!--            Col med billede-->
-            <div class="col-md-4 my-4 me-md-4 d-flex align-items-center">
-                <!--                Selve billedet-->
-                <img src="images/baren_med_udsigt.webp" alt="Baren med udsigt" class="rounded-custom">
-            </div>
-            <!--            Col med tekst-->
-            <div class="col-md-8 d-flex flex-column justify-content-center">
-                <!--                Overskrift-->
-                <h2 class="text-white mb-md-1 mb-lg-2 mt-5">75 forskellige vine</h2>
-                <!--                Paragraf-->
-                <p class="text-white mt-3 mb-md-5 fs-4">I baren kan man få 75 forskellige vine, og ca. 40 forskellige øl.
-                    Vi tilbyder blandt andet også Gammel Have, Gin Hass og en række andre favoritter.</p>
-            </div>
-        </div>
-    </div>
-    <!--    Row-->
-    <div class="row m-3 my-5 p-0 g-0 d-flex justify-content-center">
-        <!--        Col med mørk baggrund #3-->
-        <div class="col-11 gray-color d-flex flex-column flex-md-row px-3 px-md-5 align-self-center rounded-custom">
-            <!--            Col med tekst-->
-            <div class="col-md-8 d-flex flex-column justify-content-center">
-                <!--                Overskrift-->
-                <h2 class="text-white mb-md-1 mb-lg-2 mt-5">Delikate snacks</h2>
-                <!--                Paragraf-->
-                <p class="text-white mt-3 mb-md-5 fs-4">Hvad siger du til en lille delikat snack sammen med dagens glas vin?
-                    Når vejret er godt, kan du sætte dig op på Soldækket, hvor det er tilladt at ryge samt hygge med alt, hvad der kan købes i baren. </p>
-            </div>
-            <!--            Col med billede-->
-            <div class="col-md-4 m-md-4 my-4 d-flex align-items-center">
-                <!--                Selve billedet-->
-                <img src="images/soldaekket.webp" alt="Udsigt fra skibets soldæk" class="rounded-custom">
-            </div>
-        </div>
-    </div>
-    <!--    Row-->
-    <div class="row m-3 my-5 p-0 g-0 d-flex justify-content-center">
-        <!--        Col med mørk baggrund #4-->
-        <div class="col-11 gray-color d-flex flex-column-reverse flex-md-row px-3 px-md-5 align-self-center rounded-custom">
-            <!--            Col med billede-->
-            <div class="col-md-4 my-4 me-md-4 d-flex align-items-center">
-                <!--                Selve billedet-->
-                <img src="images/udsigten.webp" alt="Udsigt fra skibet" class="rounded-custom">
-            </div>
-            <!--            Col med tekst-->
-            <div class="col-md-8 d-flex flex-column justify-content-center">
-                <!--                Overskrift-->
-                <h2 class="text-white mb-md-1 mb-lg-2 mt-5">Nyd havudsigten</h2>
-                <!--                Paragraf-->
-                <p class="text-white mt-3 mb-md-5 fs-4">Du er altid velkommen ombord på Marittima.
-                    Vi anbefaler at du bestiller bord, hvis du ønsker en bestemt siddeplads. Du kan kontakte os på tlf. +45 54 85 03 55.</p>
-            </div>
+        <div class="col-6 d-flex flex-column justify-content-center px-5">
+            <h2 class="vintext py-1">Hvem er vi?</h2>
+            <p class="text-white py-1">Jes Jonigk, som ejer Marittima, ejer også vinhandlen Marius Mortensen, der siden 1865 har solgt vin, tobak og piber, og derved er en af Danmarks ældste vinhandlere.</p>
+            <p class="text-white py-1">Vinhandlen hænger i dag sammen med livstilsbutikken Thea, hvorfra man kan købe kaffe, te, lokale specialiteter og brugskunst.</p>
+            <p class="text-white py-1">Jes Jonigk havde længe haft en drøm om at etablere en vinbar i Nykøbing Falster, men havde ikke kunne finde det rigtige lokale. I 2021 købte han båden Marittima, som han arbejdede på at få restaureret frem til åbningsdagen i juni 2022.</p>
+            <p class="text-white py-1">Vinbaren på Marittima sælger vin fra Marius Mortensen samt kaffe og te fra Thea.</p>
         </div>
     </div>
 </div>
+
+<!--Tredje tekst-->
+<div class="container-fluid py-1">
+    <div class="row vinborder m-1">
+        <div class="col-6">
+            <img src="image/facebook.jpg" alt="Marittima" class="rounded-circle py-3">
+        </div>
+        <div class="col-6 d-flex flex-column justify-content-center px-5">
+            <h2 class="vintext py-1">Følg os på Facebook</h2>
+            <p class="text-white py-1">På vores Facebookside bestræber vi os efter, at have et godt forum, hvor vi kan dele interessen for vin. Her fortæller vi om kommende begivenheder og deler billeder fra arrangementer på båden. På vores Facebookside kan du også se med, når Jes går Live og snakker med kendte personer om vin og hverdag. Husk at du på vores Facebookside også kan følge med i alle vores kommende arrangementer og begivenheder.</p>
+        </div>
+    </div>
+</div>
+
 <!--Container der holder på Lokation/GPS og åbningstider samt "Book et bord"-->
 <div class="container-fluid my-5">
     <!--    Row-->
     <div class="row d-flex flex-column flex-sm-row justify-content-sm-center justify-content-lg-evenly align-items-center">
         <!--        Col som holder på GPS og åbningstider-->
-        <div class="col-11 col-lg-7 ms-md-5 me-md-5 d-flex flex-column flex-md-row gray-color rounded-custom align-items-center justify-content-between">
+        <div class="col-11 col-lg-7 ms-md-5 me-md-5 d-flex flex-column flex-md-row gray-color rounded-custom align-items-center justify-content-between vinborder">
             <!--            Col der holder på tekst-->
             <div class="col-10 d-flex flex-column-reverse flex-md-column col-sm-5 ms-sm-5">
                 <!--                Div som holder på Lokation-->
                 <div class="col mt-md-5 mb-3">
                     <!--                    Overskrift i form af paragraf-->
-                    <p class="text-white fs-2">Lokation</p>
+                    <p class="fs-2 vintext">Lokation</p>
                     <!--                    Paragraf-->
                     <p class="text-white">Marittima ligger til kaj i Sandgade, <br>
                         4800 Nykøbing Falster.</p>
@@ -353,13 +126,14 @@
                 <!--                Div der holder på Åbningstider-->
                 <div class="col mt-5 mb-3 mb-md-5">
                     <!--                    Overskrift i form af paragraf-->
-                    <p class="text-white fs-2">Åbningstider</p>
+                    <p class="vintext fs-2">Åbningstider</p>
                     <!--                    Paragraf-->
                     <p class="text-white">
-                        Onsdage fra kl. 16 til kl. 22<br>
-                        Torsdage fra kl. 16 til kl. 22<br>
-                        Fredage fra kl. 16 til 23<br>
-                        Lørdage fra kl. 14 til kl. 23<br>
+                        Onsdage fra kl. 16 til kl. 21<br>
+                        Torsdage fra kl. 16 til kl. 21<br>
+                        Fredage fra kl. 16 til 22<br>
+                        Lørdage fra kl. 16 til kl. 23<br>
+                        (Alle lørdage i Juli fra kl. 12 til kl. 23)<br>
                     </p>
                 </div>
             </div>
@@ -368,7 +142,7 @@
                 <!--                Link der fører brugeren til google maps-->
                 <a href="https://www.google.dk/maps/dir//Sandgade,+4800+Nyk%C3%B8bing+Falster/@54.7703501,11.8537091,15z/data=!3m1!4b1!4m9!4m8!1m0!1m5!1m1!1s0x47ad30f97b0d187f:0x9d45111e91fc8619!2m2!1d11.8624639!2d54.770338!3e2?hl=da" target="_blank">
                     <!--                    Billede af Maps GPS-->
-                    <img src="images/google_maps.webp" alt="google maps" class="container_billede container_pic_google-maps rounded-custom m-0 p-0 mb-4" style="object-fit: cover">
+                    <img src="image/google_maps.webp" alt="google maps" class="container_billede container_pic_google-maps rounded-custom m-0 p-0 mb-4" style="object-fit: cover">
                 </a>
             </div>
         </div>
@@ -377,9 +151,9 @@
         <!--        Div der holder på tekst-->
         <div class="col-12 col-lg-3 mt-5 mt-lg-0 d-flex flex-column justify-content-lg-evenly align-items-center">
             <!--            Overskrift-->
-            <p class="mt-3 mb-3 fs-1 w-75">Book et bord</p>
+            <p class="mt-3 mb-3 fs-1 w-75 text-white">Book et bord</p>
             <!--            Paragraf-->
-            <p class="w-75 mb-3">Skal du ombord på Marittima snart? Ring og book et bord allerede nu.
+            <p class="w-75 mb-3 text-white">Skal du ombord på Marittima snart? Ring og book et bord allerede nu.
                 Så er du sikker på at have et sted at sidde, når du vil skåle og nyde et godt glas vin.
                 <br><br> Kontakt os på +45 54 85 03 55 for at bestille et bord.
             </p>
@@ -413,6 +187,8 @@
             </div>
 
             <!-- Kontaktinfo funktioner -->
+            <p class="vintext fs-4">Kontakt os</p>
+
             <a class="footer_tekst mb-1" href="tel:+4554850355"><i class="fas fa-phone"></i> +45 54 85 03 55</a>
 
             <a class="footer_tekst mb-1" href="mailto:m@rius.dk"><i class="fas fa-envelope"></i> vinoteque-m@rius.dk</a>
@@ -422,13 +198,14 @@
                 <i class="fa-brands fa-facebook"></i> facebook.com/marittima</a>
 
             <!--                    Overskrift i form af paragraf-->
-            <p class="text-white fs-4">Åbningstider</p>
+            <p class="vintext fs-4">Åbningstider</p>
             <!--                    Paragraf-->
             <p class="text-white">
-                Onsdage fra kl. 16 til kl. 22<br>
-                Torsdage fra kl. 16 til kl. 22<br>
-                Fredage fra kl. 16 til kl. 23<br>
-                Lørdage fra kl. 14 til kl. 23<br>
+                Onsdage fra kl. 16 til kl. 21<br>
+                Torsdage fra kl. 16 til kl. 21<br>
+                Fredage fra kl. 16 til 22<br>
+                Lørdage fra kl. 16 til kl. 23<br>
+                (Alle lørdage i Juli fra kl. 12 til kl. 23)<br>
             </p>
         </div>
     </div>
@@ -440,6 +217,8 @@
     <div class="row bg-boxColor text-white text-center justify-content-between p-5 align-items-center">
 
         <div class="col-3 d-flex flex-column text-end">
+            <p class="vintext fs-4">Kontakt os</p>
+
             <div>
                 <a class="footer_tekst" href="tel:+4554850355">+45 54 85 03 55<i class="fas fa-phone ms-2"></i></a>
             </div>
@@ -461,31 +240,26 @@
 
             <!-- Logo -->
             <a class="my-4 footer_logo mx-auto d-flex justify-content-center" href="index.html">
-                <img src="images/logo_marittima_text_white.svg" alt="Marittima logo">
+                <img src="image/logo.png" alt="Logo" class="logo">
             </a>
         </div>
 
         <div class="col-3 text-start">
             <!-- Overskrift i form af paragraf -->
-            <p class="text-white fs-4">Åbningstider</p>
+            <p class="vintext fs-4">Åbningstider</p>
             <!-- Paragraf -->
             <p class="text-white">
-                Onsdage fra kl. 16 til kl. 22<br>
-                Torsdage fra kl. 16 til kl. 22<br>
-                Fredage fra kl. 16 til kl. 23<br>
-                Lørdage fra kl. 14 til kl. 23<br>
+                Onsdage fra kl. 16 til kl. 21<br>
+                Torsdage fra kl. 16 til kl. 21<br>
+                Fredage fra kl. 16 til 22<br>
+                Lørdage fra kl. 16 til kl. 23<br>
+                (Alle lørdage i Juli fra kl. 12 til kl. 23)<br>
             </p>
         </div>
     </div>
 </div>
 
-
-<!--JAVASCRIPT TIL BURGERMENUEN-->
-<script>
-    const toggle = document.querySelector('.toggle');
-    const nav = document.querySelector('.nav');
-    toggle.addEventListener('click', () => nav.classList.toggle('show'));
-</script>
+<div id="bottom"></div>
 
 <!--BOOTSTRAP-->
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

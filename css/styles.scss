@@ -6,7 +6,7 @@
 
 body {
   margin: 0; /* Ingen kanter i siden af browser */
-  background-color: #DFD0B0;
+  background-color: #111111;
   font-family: Poppins, "sans-serif";
 }
 
@@ -38,6 +38,24 @@ img {
 }
 
 //OVERORDNET STYLING
+.vintext{
+  color:#FFF1AA;
+}
+.rodvintext{
+  color:rgb(116,14,38);
+}
+.vinborder{
+  border: 1px solid #FFF1AA;
+  border-radius: 30px;
+}
+.logo{
+  height: 250px;
+  width: auto;
+}
+
+.link:hover{
+  color: #8a825c;
+}
 
 //FOOTER
 .footer_logo{
@@ -54,127 +72,16 @@ img {
   color: #d2d2d2;
 }
 
-//HEADER - NAVBAR & BURGERMENU
-.header_logo{
-  height: auto;
-  width: 250px;
-}
 
-.burger_icon{
-  height: auto;
-  width: 7.5vw;
-}
-
-.nav{
-  transition: max-height .2s ease-in-out;
-  max-height: 0;
-  overflow: hidden;
-  position: relative;
-  left: 0;
-  z-index: 10;
-  background-color: #f8f9fa;
-}
-
-.nav.show{
-  transition: max-height .2s ease-in-out;
-  max-height: 100vh;
-  background-color: #f8f9fa;
-}
-
-.nav_text{
-  font-weight: bold;
-  color: black;
-  text-decoration: none;
-}
-
-.nav_text:hover{
-  color: rgb(116,14,38);
-}
-
-.nav_current{
-  border-bottom: rgb(116,14,38) solid 2px;
-}
-
-//FORSIDE STYLING
-//-----------------BackgroundVideo---------//
-.vidbox{
-  min-height: 50vh;
-  height: 65vh;
-}
-
-.video1{
-  position: absolute;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
-
-.imgbox{
-  height: 69vh;
-}
-
-.video_center_logo{
-  height: 15vh;
-  width: auto;
-  border-radius: 1000px;
-}
-
-//------------------Carousel---------------//
-
-.container_pic_wood{
-  background-image: url("../images/wood.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  min-height: 400px;
-  filter: drop-shadow(0px 2px 10px #090607);
-}
-
-.container_pic_wood_repeated{
-  background-image: url("../images/wood.jpg");
-  background-position: center;
-  background-size: contain;
-  background-repeat: repeat;
-  width: 100%;
-  filter: drop-shadow(0px 2px 10px #090607);
-}
-
-.resize_carousel_pic{
-  width: 100vw;
-  max-height: 500px;
-}
-
-.layered-image {
-  width: 100vw;
-  height: 500px;
-  position: absolute;
-  z-index: 0;
-  background: linear-gradient(to left, transparent, black);
-}
-
-.carousel-control-prev{
-  width: 7%;
-}
-.carousel-control-next{
-  width: 7%;
-}
-
-.carousel-caption{
-  top: 10%;
-  bottom: 0;
-}
-.custom-font-size-xs{
-  font-size: 0.55rem;
-}
 //Round picture//
 .rounded-custom{
   border-radius: 30px;
 }
-
 .container_pic_google-maps{
   width: 250px;
   height: 250px;
 }
+
 //------------------Andet----------//
 .cta-phone{
   background-color: rgb(116,14,38);
@@ -197,145 +104,8 @@ img {
   filter: drop-shadow(0px 2px 10px #090607);
 }
 
-//MENU STYLING
-
-.bg_space{
-  height: 10vh;
-}
-.overskrift_stor{
-  font-size: 40px;
-}
-.box1{
-  background-color: #1C1A19;
-  border-radius: 25px;
-}
-.pic-1{
-  border-radius: 25px;
-}
-.wood-bg{
-  background-image: url("../images/wood.jpg");
-  background-position: center;
-  background-size: contain;
-  background-repeat: repeat;
-  width: 100%;
-  filter: drop-shadow(0px 2px 10px #090607);
-}
-.h2_tekst{
-  font-size: 45px;
-}
-.img1{
-  filter: drop-shadow(0px 10px 60px #090607);
-  object-fit: cover;
-}
-.img2{
-  filter: drop-shadow(0px 10px 60px #090607);
-  object-fit: cover;
-}
-
-//BEGIVENHEDER STYLING
-.container_buttonbox:hover{
-  color: #d2d2d2;
-}
-.container_billede{
-  filter: drop-shadow(0px 2px 10px #090607);
-}
-
-//SELSKABSLOKALER STYLING
-.carousel_tekst{
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
-.side_titel{
-  font-weight: bold;
-}
-
-//OM OS STYLING
-.box_border_radius{
-  border-radius: 50px;
-}
-
-.img_border_radius{
-  border-radius: 50%;
-}
-
-.wood_bg{
-  background-image: url("../images/wood.jpg");
-  background-position: center;
-  background-size: contain;
-  background-repeat: repeat;
-  filter: drop-shadow(0px 2px 10px #090607);
-}
-
-.bg_space{
-  height: 10vh;
-}
-
-.direction_reverse{
-  flex-direction: row-reverse;
-}
-
-.text_decoration_none{
-  text-decoration: none;
-}
-
-.border_none{
-  border: none;
-}
-
-.cta_box:hover{
-  color: #d2d2d2;
-}
-
-.cta_btn{
-  color: white;
-}
-
-.cta_btn:hover{
-  color: #d2d2d2;
-}
 
 //MEDIA-QUERIES
-//FORSIDE//
 @media only screen and (min-width: 480px){
-  .container_pic_wood{
-    min-height: 500px;
-  }
-}
 
-@media only screen and (min-width: 600px){
-  .container_pic_wood{
-    min-height: 550px;
-  }
-}
-
-@media only screen and (min-width: 768px){
-  .container_pic_wood{
-    min-height: 600px;
-  }
-}
-
-//MENU//
-@media screen and (min-width: 768px) and (max-width: 992px){
-  //.img1{
-  //  position: relative;
-  //  top: 55px;
-  //}
-  //.img2{
-  //  position: relative;
-  //  top: 30px;
-  //}
-}
-@media screen and (min-width: 992px) and (max-width: 1199px){
-  //.img1{
-  //  position: relative;
-  //  top: 40px;
-  //}
-
-  .overskrift_stor{
-    font-size: 40px;
-  }
-}
-@media screen and (min-width: 1400px){
-  .overskrift_stor{
-    font-size: 45px;
-  }
 }
