@@ -48,9 +48,13 @@ img {
   border: 1px solid #FFF1AA;
   border-radius: 30px;
 }
+.logo-sm{
+  width: 200px;
+  height: auto;
+}
 .logo{
-  height: 250px;
-  width: auto;
+  height: auto;
+  width: 250px;
 }
 
 .link:hover{
@@ -59,6 +63,7 @@ img {
 
 //FOOTER
 .footer_logo{
+  max-width: 250px;
   height: auto;
   width: 250px;
 }
